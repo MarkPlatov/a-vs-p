@@ -1,5 +1,5 @@
 package draw;
 
-public interface Drawer<T> {
-	public void draw(T obj);
+public abstract class Drawer<T> {
+	public abstract void draw(T obj);
 }

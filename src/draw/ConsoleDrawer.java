@@ -2,9 +2,10 @@ package draw;
 
 import draw.Drawer;
 
-public class ConsoleDrawer implements Drawer {
+public class ConsoleDrawer<T> extends Drawer<T> {
+
 	@Override
-	public void draw(Object obj) {
-		System.out.println(obj.toString());
+	public void draw(T obj) {
+		System.out.print(obj);
 	}
 }

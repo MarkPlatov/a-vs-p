@@ -1,4 +1,4 @@
-package game.players;
+package game;
 
 public interface Game {
 }
