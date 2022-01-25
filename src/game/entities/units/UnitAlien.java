@@ -1,4 +1,4 @@
 package game.entities.units;
 
-public class UnitAlien {
+public class UnitAlien extends Unit{
 }
