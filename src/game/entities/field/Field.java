@@ -1,4 +1,6 @@
 package game.entities.field;
 
-public class Field {
+import game.entities.Entity;
+
+public interface Field extends Entity {
 }

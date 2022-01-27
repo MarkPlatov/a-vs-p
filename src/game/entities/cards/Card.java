@@ -1,6 +1,8 @@
 package game.entities.cards;
 
-public interface Card {
+import game.entities.Entity;
+
+public interface Card extends Entity {
 	public void mix();
 	public void take();
 	public void use();

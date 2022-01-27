@@ -31,4 +31,9 @@ public class PlayerHuman implements Player{
 	public void takeTerrainCard() {
 	
 	}
+	
+	@Override
+	public void setDefault() {
+	
+	}
 }

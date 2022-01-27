@@ -1,8 +1,11 @@
 package io.output;
 
+import game.entities.Entity;
+
 public class HtmlDrawer implements Drawer{
+
 	@Override
-	public void draw(Object obj) {
+	public void drawEntity(Entity obj) {
 	
 	}
 }

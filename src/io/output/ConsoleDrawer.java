@@ -1,9 +1,11 @@
 package io.output;
 
-public class ConsoleDrawer<T> implements Drawer<T> {
+import game.entities.Entity;
 
+public class ConsoleDrawer implements Drawer {
+	
 	@Override
-	public void draw(T obj) {
-		System.out.print(obj);
+	public void drawEntity(Entity obj) {
+	
 	}
 }

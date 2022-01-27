@@ -1,4 +1,4 @@
 package game.entities.field;
 
-public class RaceInfo {
+public class _Action {
 }

@@ -2,11 +2,6 @@ package game.entities.units;
 
 public class UnitImpl implements Unit {
 	@Override
-	public void draw() {
-	
-	}
-	
-	@Override
 	public void move() {
 	
 	}
@@ -33,5 +28,10 @@ public class UnitImpl implements Unit {
 	@Override
 	public String info() {
 		return null;
+	}
+	
+	@Override
+	public void setDefault() {
+	
 	}
 }

@@ -1,9 +1,10 @@
 package game.entities.players;
 
+import game.entities.Entity;
 import game.entities.units.Unit;
 
-public interface Player {
-	Unit[] units = new Unit[0];
+public interface Player extends Entity {
+//	Unit[] units = new Unit[0];
 	
 	
 	public void startTurn();

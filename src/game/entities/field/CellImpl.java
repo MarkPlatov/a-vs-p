@@ -1,4 +1,4 @@
 package game.entities.field;
 
-public class Action {
+public class CellImpl {
 }

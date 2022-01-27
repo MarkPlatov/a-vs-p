@@ -1,5 +1,7 @@
 package io.output;
 
-public interface Drawer<T> {
-	public void draw(T obj);
+import game.entities.Entity;
+
+public interface Drawer {
+	public void drawEntity(Entity obj);
 }
