@@ -1,4 +1,4 @@
 package game.entities.units;
 
-public class UnitPredator {
+public class UnitPredator extends UnitImpl{
 }

@@ -1,4 +1,4 @@
 package game.entities.units;
 
-public class UnitHuman {
+public class UnitHuman extends UnitImpl {
 }

@@ -1,19 +1,28 @@
 package game.entities.units;
 
 import game.entities.Entity;
+import game.entities.cards.armor.Armor;
+import game.entities.cards.weapon.Weapon;
+import game.entities.field.Cell;
 
 
-public interface Unit extends Entity {
+public interface Unit extends Entity, Movable, Fightable {
 	
-	public void move();
+	String fullInfo();
 	
-	public void spawn();
+	String ammunitionInfo();
 	
-	public int attack();
+	void spawn(Cell cell);
 	
-	public int defend();
+	void die();
 	
-	public void die();
+	void newTurn();
 	
-	public String info();
+	void setWeapon(Weapon weapon);
+	
+	void setArmor(Armor armor);
+	
+	Weapon dropWeapon();
+	
+	Armor dropArmor();
 }
