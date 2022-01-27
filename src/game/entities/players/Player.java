@@ -1,16 +1,25 @@
 package game.entities.players;
 
 import game.entities.Entity;
+import game.entities.field.Cell;
 import game.entities.units.Unit;
 
-public interface Player extends Entity {
+public interface Player extends Entity, ActiveActions {
 //	Unit[] units = new Unit[0];
 	
+	void startTurn();
 	
-	public void startTurn();
-	public void finishTurn();
-	public void moveUnits();
-	public void takePlayerCard();
-	public void takeTerrainCard();
+	void finishTurn();
+	
+	void usePlayerCard();
+	
+	void useTerrainCard(Cell cell);
+	
+	void showCards();
+	
+	void showEnemiesStats();
+	
+	void showArmy();
+	
 	
 }

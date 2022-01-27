@@ -1,5 +1,4 @@
 package game.entities.players;
 
-public class PlayerHuman {
-
+public class PlayerStat {
 }
