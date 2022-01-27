@@ -1,38 +1,19 @@
 package game.entities.units;
 
-public class Unit implements iUnit{
-	@Override
-	public void draw() {
+import game.entities.Entity;
+
+
+public interface Unit extends Entity {
 	
-	}
+	public void move();
 	
-	@Override
-	public void move() {
+	public void spawn();
 	
-	}
+	public int attack();
 	
-	@Override
-	public void spawn() {
+	public int defend();
 	
-	}
+	public void die();
 	
-	@Override
-	public int attack() {
-		return 0;
-	}
-	
-	@Override
-	public int defend() {
-		return 0;
-	}
-	
-	@Override
-	public void die() {
-	
-	}
-	
-	@Override
-	public String info() {
-		return null;
-	}
+	public String info();
 }

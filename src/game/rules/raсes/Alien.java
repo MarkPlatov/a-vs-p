@@ -10,4 +10,14 @@ public class Alien implements Race{
 	public boolean isLose() {
 		return false;//TODO
 	}
+	
+	@Override
+	public void addWinPoint() {
+	
+	}
+	
+	@Override
+	public void addLosePoint() {
+	
+	}
 }
