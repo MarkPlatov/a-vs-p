@@ -3,11 +3,17 @@ package game.entities.units;
 import game.entities.cards.armor.Armor;
 import game.entities.cards.weapon.Weapon;
 import game.entities.field.Cell;
+import game.rules.info.Info;
 
 public class UnitImpl implements Unit{
 	@Override
 	public void setDefault() {
 	
+	}
+	
+	@Override
+	public Info getInfo() {
+		return null;
 	}
 	
 	@Override
@@ -61,7 +67,7 @@ public class UnitImpl implements Unit{
 	}
 	
 	@Override
-	public Attack attack() {
+	public Shot attack() {
 		return null;
 	}
 	

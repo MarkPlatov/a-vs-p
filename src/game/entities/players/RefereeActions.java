@@ -1,8 +1,10 @@
 package game.entities.players;
 
+import game.rules.info.PlayerInfo;
+
 public interface RefereeActions {
 	
-	PlayerStat getStat();
+	PlayerInfo getStat();
 	
 	void mute();
 }

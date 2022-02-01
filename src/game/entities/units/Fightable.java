@@ -4,7 +4,7 @@ public interface Fightable {
 	
 	boolean canAttack(Unit unit);
 	
-	Attack attack();
+	Shot attack();
 	
 	Defend defend();
 }
