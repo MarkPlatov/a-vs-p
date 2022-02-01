@@ -1,7 +1,7 @@
-package io.output;
+package io.output.draw;
 
 import game.entities.Entity;
 
 public interface Drawer {
-	public void drawEntity(Entity obj);
+	void drawEntity(Entity entity);
 }
