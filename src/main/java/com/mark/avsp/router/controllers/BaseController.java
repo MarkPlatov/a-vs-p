@@ -11,15 +11,17 @@ public class BaseController {
 
         <T> ModelAndView getDefaultModelAndView(
                 Map<String, Object> model,
-                Iterable<T> data,
-                String route) {
+                String route,
+                Iterable<T> data
+        ) {
             model.put(DATA, data);
             return getDefaultModelAndView(model, route);
         }
 
         ModelAndView getDefaultModelAndView(
                 Map<String, Object> model,
-                String route) {
+                String route
+        ) {
             model.put(ROUTE, route);
             return new ModelAndView(VIEW_NAME, model);
         }

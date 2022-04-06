@@ -20,16 +20,21 @@
 
         <h2>Tasks List</h2>
         <div class="tasks-list">
-            <div class="task" th:each="task : ${tasks}">
+            <div class="task" th:each="unit : ${data}">
                 <form class="form-horizontal" method="post" action="edit">
-                    <div class="time" th:text = "${task.creationDateString} + ' ' + ${task.creationTimeString}" />
-                    <input class="input-text task-text" type="text" name="text" th:value="${task.text}"/>
-                    <input class="input-text task-tag" type="text" name="tag" th:value="${task.tag}"/>
-                    <input type="number" name="id" th:value="${task.id}" hidden/>
+                    <div th:text = "${unit.id}"/>
+                    <div th:text = "${unit.race}"/>
+                    <div th:text = "${unit.baseSpeed}"/>
+                    <div th:text = "${unit.basePower}"/>
+                    <div th:text = "${unit.isAlive}"/>
+                    <div th:text = "${unit.weapon}"/>
+                    <div th:text = "${unit.armor}"/>
+
+                    <input type="number" name="id" th:value="${unit.id}" hidden/>
                     <button class="button" type="submit">Edit</button>
                 </form>
                 <form method="post" action="delete">
-                    <input type="number" name="id" th:value="${task.id}" hidden/>
+                    <input type="number" name="id" th:value="${unit.id}" hidden/>
                     <button class="button button-red" type="submit">Delete</button>
                 </form>
 
